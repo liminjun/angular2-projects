@@ -12,6 +12,7 @@ import {Component} from '@angular/core';
       <div class="container body-content app-container">
         <h1>Hello, {{name}}!</h1>
         Say hello to: <input [value]="name" (input)="name = $event.target.value">
+        <workout-runner></workout-runner> 
       </div>`
 })
 export class TrainerAppComponent {
