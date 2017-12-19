@@ -1,9 +1,10 @@
 import { WorkoutPlan, ExercisePlan, Exercise } from './model'
 import { Component, OnInit } from '@angular/core';
+import {ExerciseDescriptionComponent} from './exercise-description/exercise-description.component'; 
+
 @Component({
     selector: 'workout-runner',
     templateUrl: '/src/components/workout-runner/workout-runner.html' 
-    
 })
 
 export class WorkoutRunnerComponent implements OnInit {
@@ -29,8 +30,9 @@ export class WorkoutRunnerComponent implements OnInit {
                     "A jumping jack or star jump, also called side-straddle hope is a physical jumping exercise.",
                     "JumpingJacks.png",
                     "jumpingjacks.wav",
-                    `Assume an erect position, with feet together and 
-                   arms at your side. ...`,
+                    `Assume an erect position, with feet together and arms at your side. <br> 
+                    Slightly bend your knees, and propel yourself a few inches into the air. <br> 
+                    While in air, bring your legs out to the side about shoulder width or slightly wider. <br> `,
                     ["dmYwZH_BNd0", "BABOdJ-2Z6o", "c4DAnQ6DtF8"]),
                 30));
         // (TRUNCATED) Other 11 workout exercise data. 
